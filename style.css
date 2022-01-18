@@ -1,0 +1,291 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  height: 134%;
+  display: flex;
+  position: absolute;
+  margin-top: auto;
+  justify-content: center;
+  align-items: center;
+  background-image: url("./Desktop\ -\ 1.jpg");
+}
+.container h1 {
+  text-align: center;
+  margin-bottom: 500px;
+  z-index: 1;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+nav{
+  position: fixed;
+  background: yellow;
+  height:80px;
+  width: 100%;
+  z-index: 100;
+}
+.enlace{
+  position: absolute;
+  padding: 0px 80px;
+}
+nav ul {
+    margin: 0 0 0 550px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 50px;}
+nav ul li a{
+  color: white;
+  font-size: 18px;
+  padding: 15px 63px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+li a.active, li a:hover{
+background: blue;
+transition: .5s;
+}
+.checkbtn{
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  display: none;
+}
+#check{
+  display: none;
+}
+.slider-frame {
+  position: absolute;
+  width: 780px;
+  height: auto;
+  margin: 150px 0 0 0;
+  overflow: hidden;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+
+  animation: slide 6s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 100%;
+  list-style: none;
+}
+
+.slider-frame img {
+  width: 100%;
+  height: 70%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: -300%;
+  }
+}
+.co {
+  position: absolute;
+    width: 100%;
+  height: 750px;
+  margin-top: 80px;
+}
+.info {
+  position: absolute;
+    background-image: url("./Diseño\ sin\ título.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 0  0 0 ;
+  width: 100%;
+  height: 100%;
+}
+.info h1 {
+  position: absolute;
+  margin: 150px;
+  font-size: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.info p {
+  margin: 250px 0 0 100px;
+  position: absolute;
+  width: 40%;
+  font-size: 30px;
+  font-family: "Karla", sans-serif;
+}
+.info img {
+  position: absolute;
+  width: 450px;
+  margin-top: 150px;
+  margin-left: 740px;
+}
+.grid {
+  position: absolute;
+  padding: 180px 0 0 47px;
+}
+.grid img {
+  width: 400px;
+  padding: 10px;
+}
+ul .modal-contenido1 {
+  background-image: url("https://www.collinsdictionary.com/images/full/school_309241295.jpg");
+  width: 1000px;
+  height: 500px;
+  padding: 0;
+  margin: 110px auto;
+  position: relative;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#miModal1:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-contenido2 {
+  background-image: url("https://learnenglishteens.britishcouncil.org/sites/teens/files/styles/article/public/field/image/rs977_151933650-web_0.jpg?itok=YAtFl4gW");
+  width: 1000px;
+  height: 500px;
+  padding: 0;
+  margin: 110px auto;
+  position: relative;
+}
+.modal2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 1s;
+}
+#miModal2:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+ul .modal a{
+  font-size: 50px;
+  text-decoration: none;
+  color: white;
+}
+
+#check{
+  display: none;
+}                      
+@media screen and (max-width:880px) {
+  .container {
+  width: 100%;
+  height: 134%;
+  display: flex;
+  position: absolute;
+  background-image: url("./Desktop\ -\ 1.jpg");
+}
+.slider-frame img {
+  width: 50%;
+  height: 70%;
+}
+.slider-frame {
+  position: absolute;
+  width: 1250px;
+  height: auto;
+  margin: 110px 0 0 650px;
+  overflow: hidden;
+}
+.checkbtn{
+  display: block;
+}
+ nav ul{
+     position: absolute;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: blue;
+top: 80px;
+margin-left: -100%;
+text-align: center;
+transition: all .5s;
+}
+nav ul li{
+  display: block;
+  margin: 50px 0;
+  line-height: 30px
+}
+nav ul li a{
+  font-size: 20px;
+}
+
+#check:checked ~ ul {
+  margin-left: 0;
+  z-index: 100;
+}
+.info {
+  position: absolute;
+  background-image: url("./Diseño\ sin\ título.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+.info h1 {
+  position: absolute;
+  margin: 100px;
+  font-size: 27px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+.info p {
+  margin: 150px 0 0 70px;
+  position: absolute;
+  width: 50%;
+  font-size: 27px;
+  font-family: "Karla", sans-serif;
+}
+.info img {
+  position: absolute;
+  width: 250px;
+  margin-top: 200px;
+  margin-left: 450px;
+}
+ .co {
+  position: absolute;
+    width: 100%;
+  height: 750px;
+  margin-top: 80px;
+}
+}
